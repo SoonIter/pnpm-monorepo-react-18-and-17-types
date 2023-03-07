@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 472488ca06c7a3f21a51a73d4f0ac830434a8f84..34f4eebca8d7ad4e7f8311785632d6b93de87d19 100755
+--- a/package.json
++++ b/package.json
+@@ -47,7 +47,7 @@
+     },
+     "scripts": {},
+     "dependencies": {
+-        "@types/react": "*"
++        "@types/react": "^18"
+     },
+     "typesPublisherContentHash": "27673d88deb3e7d51dc603fbb3668e21b0cc902c4ff84b6a84de98fd74ad8ce0",
+     "typeScriptVersion": "4.2",
