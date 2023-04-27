@@ -12,6 +12,7 @@ const node: React.ReactNode = {};
 const x = () => {
   return (
     <Route>
+      {/* react18-type assign to react17-type  ✅ */}
       <Helmet />
       <div></div>
     </Route>

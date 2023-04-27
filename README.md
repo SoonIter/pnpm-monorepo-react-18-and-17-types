@@ -1,12 +1,26 @@
-# type error of monorepo with both react@17 and @18
+# Type '{}' is not assignable to type 'ReactNode' ---- type error of monorepo with both react@17 and @18
 
 ![jsx_type_error](./docs/error2.png)
 
 ![types_error](./docs/error.png)
 
+### 具体报错
+
+react18-type: `import("@types+react@18.0.x/node_modules/@types/react")` 
+
+react17-type: `import("@types+react@17.0.x/node_modules/@types/react")` 
+
+react18-type assign to react17-type  ✅ 
+
+react17-type assign to react18-type  ❌
+
+Type '{}' is not assignable to type 'ReactNode'.
+
 ### 原因
 
-react 中社区中很多包都依赖了 `dependencies "@types/react": "*"` ，造成 resolve依赖时，会拿到该monorepo下最新的 @types/react 
+@types/react@17 -> @18 有 breaking 
+
+而 react 中社区中很多包都依赖了 `dependencies "@types/react": "*"` ，造成 resolve依赖时，会拿到该monorepo下最新的 @types/react 
 
 ### 解决方案：
 
@@ -56,3 +70,4 @@ module.exports = {
 [short-term-solution](https://github.com/facebook/react/issues/24304#issuecomment-1094565891)
 
 [long-term-solution](https://github.com/microsoft/DefinitelyTyped-tools/issues/433)
+

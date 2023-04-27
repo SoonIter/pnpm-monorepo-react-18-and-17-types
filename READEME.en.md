@@ -4,9 +4,22 @@
 
 ! [types_error](. /docs/error.png)
 
+
+### Error Detail
+
+react18-type: `import("@types+react@18.0.x/node_modules/@types/react")` 
+
+react17-type: `import("@types+react@17.0.x/node_modules/@types/react")` 
+
+react18-type assign to react17-type  ✅ 
+
+react17-type assign to react18-type  ❌ `Type '{}' is not assignable to type 'ReactNode'.`
+
 ### Reason
 
-Many packages in the react community depend on `dependencies "@types/react": "*"`, causing the resolve dependency when installing to get the latest `@types/react@18.x` under the monorepo 
+@types/react@17 -> @18 has breaking changes
+
+And many packages in the react community depend on `dependencies "@types/react": "*"`, causing the resolve dependency when installing to get the latest `@types/react@18.x` under the monorepo 
 
 ### Solution:
 
