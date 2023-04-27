@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "react-helmet": "^6.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "redux": "^4.2.1",
@@ -14,7 +15,8 @@
     "react-router": "^6.8.2",
     "@types/react": "17.0.53",
     "@types/react-dom": "17.0.11",
-    "typescript": "^4"
+    "typescript": "^4",
+    "@types/react-helmet": "^6.1.6"
   },
   "keywords": [],
   "author": "",

@@ -12,12 +12,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": false,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node",
-    // "paths": {
-    //   "react": ["../react18/node_modules/@types/react"]
-    // }
+    "moduleResolution": "node"
   },
 }
